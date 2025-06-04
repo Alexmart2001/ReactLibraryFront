@@ -1,0 +1,122 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    overflow-x: hidden;
+    background: none;
+}
+
+.help-container {
+    width: 200vw;
+    min-height: 100vh;
+    padding: 40px 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #ffffff 0%, #eccd8a 100%);
+}
+
+/* Título */
+.help-title {
+    text-align: center;
+    color: #ff6f91;
+    font-size: 36px;
+    font-weight: 900;
+    margin-bottom: 8px;
+    text-shadow: 1px 1px 3px #ffaec0;
+}
+
+/* Subtítulo */
+.help-subtitle {
+    text-align: center;
+    color: #ff9a9e;
+    font-size: 20px;
+    margin-bottom: 30px;
+    font-style: italic;
+}
+
+/* Formulario */
+.help-form {
+    display: flex;
+    flex-direction: column;
+    width: 480px;
+    background: rgba(252, 224, 224, 0.93);
+    padding: 30px;
+    border-radius: 25px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Etiquetas */
+.help-form label {
+    margin-bottom: 10px;
+    font-weight: 700;
+    color: #444;
+    font-size: 15px;
+}
+
+/* Inputs y textarea */
+.help-form input,
+.help-form textarea {
+    padding: 14px 18px;
+    margin-bottom: 20px;
+    border: 2px solid #cce7ff;
+    border-radius: 16px;
+    font-size: 16px;
+    outline: none;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+    background-color: #f9fbff;
+}
+
+.help-form input::placeholder,
+.help-form textarea::placeholder {
+    color: #a0a0a0;
+    font-style: italic;
+}
+
+.help-form input:focus,
+.help-form textarea:focus {
+    border-color: #030f21;
+    box-shadow: 0 0 8px rgba(111, 169, 255, 0.4);
+}
+
+.help-form textarea {
+    resize: vertical;
+    min-height: 110px;
+}
+
+/* Botón */
+.help-button {
+    padding: 16px;
+    background-color: #381712;
+    color: white;
+    font-weight: 900;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: background-color 0.4s ease, transform 0.2s ease;
+    box-shadow: 0 6px 12px rgba(111, 169, 255, 0.4);
+}
+
+.help-button:hover {
+    background-color: #86b0e3;
+    transform: scale(1.05);
+}
+
+/* Mensaje de éxito */
+.help-message {
+    margin-top: 25px;
+    font-size: 18px;
+    color: #2a7a1f;
+    text-align: center;
+    font-weight: 700;
+    text-shadow: 1px 1px 2px #9acd32;
+}

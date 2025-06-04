@@ -1,0 +1,135 @@
+.diario-container {
+    max-width: 2000px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background-color: #8eecf8;
+    border-radius: 12px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  h2 {
+    color: #006064;
+    text-align: center;
+    margin-bottom: 1.5rem;
+    font-size: 1.8rem;
+  }
+  
+  .emoji-selector {
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .emoji-selector button {
+    font-size: 2.5rem;
+    padding: 0.5rem;
+    background: white;
+    border: 2px solid transparent;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .emoji-selector button:hover {
+    transform: scale(1.1);
+  }
+  
+  .emoji-selector button.seleccionado {
+    border-color: #00acc1;
+    background-color: #b2ebf2;
+    box-shadow: 0 0 8px #00acc1;
+  }
+  
+  .seleccion {
+    text-align: center;
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+    color: #006064;
+  }
+  
+  textarea {
+    width: 100%;
+    height: 120px;
+    margin-top: 1rem;
+    font-size: 1rem;
+    padding: 0.8rem;
+    border-radius: 8px;
+    border: 1px solid #b2ebf2;
+    outline: none;
+    transition: border 0.3s;
+    resize: vertical;
+    font-family: inherit;
+  }
+  
+  textarea:focus {
+    border-color: #00acc1;
+    box-shadow: 0 0 5px rgba(0, 172, 193, 0.5);
+  }
+  
+  .guardar {
+    display: block;
+    width: 100%;
+    margin-top: 1.5rem;
+    padding: 0.8rem;
+    background-color: #00acc1;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1.1rem;
+    font-weight: bold;
+    transition: background-color 0.3s;
+  }
+  
+  .guardar:hover {
+    background-color: #0097a7;
+  }
+  
+  .mensaje {
+    margin-top: 1rem;
+    padding: 0.8rem;
+    border-radius: 8px;
+    text-align: center;
+  }
+  
+  .mensaje.error {
+    background-color: #ffcdd2;
+    color: #c62828;
+  }
+  
+  .mensaje.exito {
+    background-color: #c8e6c9;
+    color: #2e7d32;
+  }
+  
+  .registro-historial {
+    margin-top: 2rem;
+  }
+  
+  .registro-historial h3 {
+    color: #006064;
+    margin-bottom: 1rem;
+  }
+  
+  ul {
+    margin-top: 1rem;
+    list-style: none;
+    padding: 0;
+  }
+  
+  li {
+    background: #ffffff;
+    margin: 0.5rem 0;
+    padding: 0.8rem;
+    border-radius: 8px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  }
+  
+  li p {
+    margin-top: 0.5rem;
+    color: #555;
+    font-style: italic;
+  }

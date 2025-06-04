@@ -1,0 +1,248 @@
+/* Fondo general */
+.canciones-container {
+    max-width: 1000px;
+    margin: 3rem auto;
+    padding: 2.5rem 3rem;
+    background: linear-gradient(135deg, #d9e8ff 0%, #a1c4fd 100%);
+    border-radius: 16px;
+    box-shadow: 0 8px 24px rgba(37, 99, 235, 0.3);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #1e293b;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+/* Header */
+.canciones-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.canciones-header h2 {
+    margin: 0;
+    font-size: 2.4rem;
+    font-weight: 700;
+    text-align: center;
+    color: #0f172a;
+    letter-spacing: 0.05em;
+    text-shadow: 1px 1px 3px rgba(37, 99, 235, 0.4);
+}
+
+/* Botón agregar */
+.btn-agregar {
+    background-color: #2563eb;
+    color: white;
+    border: none;
+    padding: 0.75rem 1.6rem;
+    border-radius: 12px;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 1.1rem;
+    box-shadow: 0 4px 12px rgba(37, 99, 235, 0.4);
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    user-select: none;
+}
+
+.btn-agregar:hover {
+    background-color: #1e40af;
+    box-shadow: 0 6px 20px rgba(30, 64, 175, 0.6);
+}
+
+/* Contenedor del botón */
+.contenedor-boton {
+    display: flex;
+    justify-content: center;
+    margin-top: 1.5rem;
+}
+
+/* Tabla contenedora */
+.tabla-container {
+    overflow-x: auto;
+    background-color: white;
+    border-radius: 14px;
+    box-shadow: 0 6px 18px rgba(37, 99, 235, 0.15);
+    padding: 1rem;
+}
+
+/* Tabla */
+.tabla-canciones {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0 8px;
+    font-size: 1rem;
+    color: #334155;
+}
+
+/* Encabezado tabla */
+.tabla-canciones thead th {
+    background-color: #2563eb;
+    color: white;
+    font-weight: 700;
+    padding: 1rem 1.5rem;
+    border-radius: 10px 10px 0 0;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    box-shadow: inset 0 -3px 8px rgba(0,0,0,0.15);
+}
+
+/* Filas y celdas */
+.tabla-canciones th,
+.tabla-canciones td {
+    padding: 0.9rem 1.2rem;
+    background-color: #f9fafb;
+    border-bottom: none;
+    vertical-align: middle;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+/* Separación entre filas (usando border-spacing) evita líneas duras */
+.tabla-canciones tbody tr:hover td {
+    background-color: #e0e7ff;
+    color: #1e293b;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* Botones editar y eliminar */
+.btn-editar,
+.btn-eliminar {
+    border: none;
+    cursor: pointer;
+    font-size: 1.3rem;
+    margin-right: 0.6rem;
+    background: transparent;
+    transition: color 0.3s ease;
+}
+
+.btn-editar:hover {
+    color: #2563eb;
+}
+
+.btn-eliminar:hover {
+    color: #dc2626;
+}
+
+/* Botón eliminar en modal */
+.btn-eliminar-modal {
+    background-color: #ef4444;
+    color: white;
+    border: none;
+    padding: 0.75rem 1.2rem;
+    border-radius: 10px;
+    font-weight: 700;
+    cursor: pointer;
+    box-shadow: 0 5px 15px rgba(239, 68, 68, 0.5);
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.btn-eliminar-modal:hover {
+    background-color: #b91c1c;
+    box-shadow: 0 8px 24px rgba(185, 28, 28, 0.7);
+}
+
+/* Modal overlay */
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(15, 23, 42, 0.75);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1100;
+}
+
+/* Modal content */
+.modal-content {
+    background: #f8fafc;
+    padding: 2.5rem 3rem;
+    border-radius: 20px;
+    width: 90%;
+    max-width: 450px;
+    box-shadow: 0 12px 35px rgba(37, 99, 235, 0.3);
+    text-align: center;
+    font-weight: 500;
+    color: #334155;
+}
+
+/* Título modal */
+.modal-content h3 {
+    margin-bottom: 1.5rem;
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: #1e293b;
+    letter-spacing: 0.05em;
+}
+
+/* Inputs modal */
+.modal-content input {
+    width: 100%;
+    padding: 0.75rem 1rem;
+    margin: 0.75rem 0 1.2rem 0;
+    border: 2px solid #2563eb;
+    border-radius: 12px;
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: #0f172a;
+    transition: border-color 0.3s ease;
+}
+
+.modal-content input:focus {
+    outline: none;
+    border-color: #1d4ed8;
+    box-shadow: 0 0 8px #2563ebaa;
+}
+
+/* Botones modal */
+.modal-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 1.8rem;
+}
+
+.modal-buttons button {
+    flex: 1;
+    padding: 0.75rem 0;
+    font-weight: 600;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(37, 99, 235, 0.25);
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Botón cancelar */
+.btn-cancelar {
+    background-color: #9ca3af;
+    color: white;
+}
+
+.btn-cancelar:hover {
+    background-color: #6b7280;
+    box-shadow: 0 6px 20px rgba(107, 114, 128, 0.6);
+}
+
+/* Botón aceptar */
+.btn-aceptar {
+    background-color: #2563eb;
+    color: white;
+}
+
+.btn-aceptar:hover {
+    background-color: #1d4ed8;
+    box-shadow: 0 6px 20px rgba(29, 78, 216, 0.7);
+}
+
+/* Mensaje no hay canciones */
+.no-canciones {
+    text-align: center;
+    font-size: 1.2rem;
+    color: #64748b;
+    padding: 3rem 0;
+    font-style: italic;
+}

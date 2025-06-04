@@ -1,0 +1,86 @@
+/* Mejorar el menú de navegación para niños con autismo */
+nav, .nav-links, .navigation {
+  width: 180px;
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  left: 0;
+  top: 0;
+  height: 100vh;
+  padding: 25px 0;
+  background-color: #f0e6ff; /* Color lavanda suave */
+  border-right: 1px solid #d9d0e8;
+  box-shadow: 2px 0 10px rgba(0,0,0,0.05);
+}
+
+/* Estilo para los enlaces del menú */
+nav a, .nav-links a, .navigation a {
+  margin: 8px 15px;
+  padding: 12px 15px;
+  border-radius: 12px;
+  text-align: left;
+  font-size: 16px;
+  color: #5a4c7b;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+}
+
+/* Efecto hover y selección actual */
+nav a:hover, .nav-links a:hover, .navigation a:hover,
+nav a.active, .nav-links a.active, .navigation a.active {
+  background-color: #e0d3f5;
+  color: #4a3b6b;
+  transform: scale(1.02);
+}
+
+/* Añadir espacio entre menú y contenido */
+#root {
+  padding-left: 180px; /* Igual al ancho del menú */
+  width: calc(100% - 180px);
+  display: flex;
+  justify-content: center;
+}
+
+/* Centrar el contenido en el espacio disponible */
+.home-container, .login-page, .register-container, .catalog-container, .diario-container {
+  width: 90%;
+  max-width: 800px;
+  margin: 20px auto;
+  border-radius: 15px;
+  background-color: white;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+  padding: 25px;
+}
+
+/* Estilo específico para la tarjeta de emociones */
+.emotion-card {
+  background-color: #e8f7f7;
+  border-radius: 15px;
+  padding: 20px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+/* Estilo para los botones */
+button, .button {
+  border-radius: 15px;
+  padding: 12px 20px;
+  font-size: 16px;
+  font-weight: 500;
+  transition: all 0.3s;
+  border: none;
+  cursor: pointer;
+}
+
+/* Estilo específico para botón principal como el "Guardar en mi diario" */
+.primary-button {
+  background-color: #00bcd4;
+  color: white;
+}
+
+.primary-button:hover {
+  background-color: #00a0b7;
+  transform: translateY(-2px);
+}

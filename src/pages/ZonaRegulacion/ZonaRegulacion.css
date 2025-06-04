@@ -1,0 +1,208 @@
+.zona-regulacion-container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f6e1cb;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
+  
+  h1, h2, h3 {
+    color: #033123;
+    text-align: center;
+  }
+  
+  .zona-menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px 0;
+  }
+  
+  .actividades-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+    margin: 20px 0;
+    width: 100%;
+  }
+  
+  .actividad-btn {
+    padding: 16px;
+    font-size: 18px;
+    background-color: #b5e5d9;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    height: 100px;
+  }
+  
+  .actividad-btn:hover {
+    background-color: #8fd2c0;
+    transform: translateY(-2px);
+  }
+  
+
+  .actividad-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 20px 0;
+  }
+  
+  .volver-btn {
+    background-color: #f0f0f0;
+    border: 1px solid #ddd;
+    padding: 10px 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+  }
+  
+  /* Música */
+  .musica-player {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    margin: 20px 0;
+    width: 100%;
+    max-width: 400px;
+  }
+  
+  .musica-player select, .musica-player button {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+  }
+  
+  /* Respiración */
+  .respiracion-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    margin: 20px 0;
+  }
+  
+  .respiracion-circulo {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 2px solid #8fd2c0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  }
+  
+  .respiracion-animacion {
+    width: 80%;
+    height: 80%;
+    background-color: rgba(143, 210, 192, 0.6);
+    border-radius: 50%;
+    transition: transform 4s ease, opacity 4s ease;
+  }
+  
+  .respiracion-animacion.paso-0 {
+    transform: scale(0.8);
+  }
+  
+  .respiracion-animacion.paso-1 {
+    transform: scale(1);
+  }
+  
+  .respiracion-animacion.paso-2 {
+    transform: scale(1);
+  }
+  
+  .respiracion-animacion.paso-3 {
+    transform: scale(0.8);
+  }
+  
+  .respiracion-animacion.paso-4 {
+    transform: scale(0.8);
+    opacity: 0.8;
+  }
+  
+  .instruccion {
+    font-size: 18px;
+    text-align: center;
+    max-width: 400px;
+  }
+  
+  /* Cuento */
+  .cuento-container {
+    width: 100%;
+    max-width: 600px;
+    margin: 20px 0;
+  }
+  
+  .cuento-container select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+  }
+  
+  .cuento-texto {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    border-left: 5px solid #8fd2c0;
+  }
+  
+  /* Dibujo */
+  .dibujo-controles {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 15px;
+    padding: 10px;
+    background-color: #f0f0f0;
+    border-radius: 5px;
+  }
+  
+  .canvas-dibujo {
+    border: 1px solid #ddd;
+    background-color: white;
+    border-radius: 5px;
+    touch-action: none; /* Importante para dispositivos táctiles */
+  }
+
+.buttonss {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.buttonss button {
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  background-color: #4f46e5; /* Indigo-600 */
+  color: white;
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.buttonss button:hover {
+  background-color: #4338ca; /* Indigo-700 */
+  transform: translateY(-2px);
+}
+
+.buttonss button:active {
+  transform: translateY(0);
+  background-color: #3730a3; /* Indigo-800 */
+}

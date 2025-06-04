@@ -1,0 +1,99 @@
+.juegos-container {
+    padding: 2.5rem 3rem;
+    background: linear-gradient(135deg, #fff0f0, #ffbebe);
+    border-radius: 25px;
+    box-shadow: 0 12px 28px rgba(255, 123, 123, 0.25);
+    max-width: 1000px;
+    margin: 2rem auto;
+    font-family: 'Poppins', sans-serif;
+    color: #4a4a4a;
+    transition: box-shadow 0.3s ease;
+}
+
+.juegos-container:hover {
+    box-shadow: 0 18px 40px rgba(255, 123, 123, 0.4);
+}
+
+.formulario-agregar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+    flex-wrap: wrap;
+}
+
+.formulario-agregar input {
+    flex: 1 1 280px;
+    padding: 0.7rem 1rem;
+    border-radius: 15px;
+    border: 2px solid #ffa5a5;
+    font-size: 1rem;
+    transition: border-color 0.3s ease;
+}
+
+.formulario-agregar input:focus {
+    border-color: #ff4f4f;
+    outline: none;
+    box-shadow: 0 0 8px rgba(255, 79, 79, 0.5);
+}
+
+.formulario-agregar button {
+    background-color: #ff4f4f;
+    border: none;
+    border-radius: 25px;
+    padding: 0.75rem 2.5rem;
+    color: white;
+    font-weight: 600;
+    font-size: 1.1rem;
+    cursor: pointer;
+    box-shadow: 0 6px 16px rgba(255, 79, 79, 0.4);
+    transition: background-color 0.3s ease, box-shadow 0.3s ease, transform 0.2s ease;
+    align-self: center;
+}
+
+.formulario-agregar button:hover {
+    background-color: #d13333;
+    box-shadow: 0 8px 22px rgba(209, 51, 51, 0.6);
+    transform: translateY(-3px);
+}
+
+.tabla-juegos {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0 10px;
+    background-color: transparent;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.tabla-juegos th, .tabla-juegos td {
+    padding: 1rem 1.25rem;
+    border-bottom: none;
+    text-align: left;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(255, 123, 123, 0.15);
+}
+
+.tabla-juegos th {
+    background-color: #ff7b7b;
+    color: #fff;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    user-select: none;
+}
+
+.btn-eliminar {
+    background-color: transparent;
+    border: none;
+    font-size: 1.3rem;
+    cursor: pointer;
+    color: #cc2c2c;
+    transition: color 0.3s ease, transform 0.2s ease;
+}
+
+.btn-eliminar:hover {
+    color: #ff4f4f;
+    transform: scale(1.2);
+}

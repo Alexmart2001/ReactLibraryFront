@@ -1,0 +1,43 @@
+/* src/App.css */
+html, body {
+  margin: 0;
+  padding: 0;
+  background-color: #f6e5e5;
+  font-family: Arial, sans-serif;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;    
+  margin: 0 auto;
+}
+
+.logout-button {
+  background: linear-gradient(135deg, #a8d0db, #f0e7db);
+  border: none;
+  padding: 12px 24px;
+  position: relative;
+  border-radius: 25px;
+  cursor: pointer;
+  left: 170px;
+  color: #4a6fa5;
+  font-weight: 600;
+  font-size: 1rem;
+  letter-spacing: 1.5px;
+  box-shadow: 0 4px 8px rgba(74, 111, 165, 0.3);
+  transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.3s ease;
+  user-select: none;
+}
+
+.logout-button:hover {
+  background: linear-gradient(135deg, #90b7d2, #d6e2f0);
+  box-shadow: 0 6px 12px rgba(74, 111, 165, 0.5);
+  transform: scale(1.05);
+  color: #2f4f70;
+}
+
+.logout-button:active {
+  transform: scale(0.95);
+  box-shadow: 0 3px 6px rgba(74, 111, 165, 0.4);
+}
