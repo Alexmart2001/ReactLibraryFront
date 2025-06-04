@@ -16,8 +16,8 @@ Frontend desarrollado con React y Vite para la gestión de libros en una aplicac
 - React
 - Vite
 - JavaScript (ES6+)
-- Axios (o fetch) para llamadas HTTP
-- CSS / Styled Components (o la que uses)
+- Axios y fetch para llamadas HTTP
+- CSS 
 
 ## Instalación y ejecución
 
